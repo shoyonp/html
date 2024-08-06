@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/23985550/pexels-photo-23985550/free-photo-of-a-windmill-in-the-fog-with-a-tree-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" width="200px" alt="no image">
+
+    <img src="./view.png" width="200px" alt="no image">
+<picture>
+    <source media="(min-width:650px)" srcset="./16.png" /> 
+    <source media="(min-width:460px)" srcset="./16.png" /> 
+    <img src="./16.png" width="400px" alt="no image">
+</picture>
+
+<!-- an image map generator -->
+
+<img src="16.png"  usemap="#image-map" >
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="1193,1022,1547,1376" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="505,2540,794,2694" shape="rect">
+</map>
+
+<script>
+    function one(){
+    alert("you clicked on one")
+}
+function two(){
+    alert("you clicked on two")
+}
+</script>
+
+
+</body>
+</html>
